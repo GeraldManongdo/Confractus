@@ -1,0 +1,35 @@
+.tech-carousel {
+  overflow: hidden;
+  display: flex;
+}
+
+.tech-carousel > * {
+  flex: 0 0 100%;
+}
+
+.tech-carousel:hover .tech-group {
+  animation-play-state: paused;
+}
+
+.tech-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3rem;
+  padding-right: 3rem;
+  will-change: transform;
+  animation: scrolling 20s linear infinite;
+}
+
+.tech-item {
+  white-space: nowrap;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

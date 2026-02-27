@@ -12,9 +12,39 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loadingPage.css">
 </head>
-<body>
+<body >
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 
+    <section class=" container d-flex flex-column justify-content-center align-items-center vh-100 z-100" id="loading-container">
+        <div class=" d-flex flex-column justify-content-center align-items-center text-center" style="width: 35rem;">
+            <h1 class="display-3 text-gradient fw-bold mb-2">Confractus</h1>
+            <div class="progress shadow text-gradient w-100 my-2" style="height: 5px;">
+                <div id="progressBar" class="progress-bar progress-bar-striped progress-bar-animated background-gradient" role="progressbar"style="width: 0%">
+                </div>
+            </div>
+            <span class="text-white-50 fw-medium fs-5 my-2" >loading Experience ...</span>
+        </div>
+    </section>
+    
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/loadingPage.js"></script>
 </body>
 </html>

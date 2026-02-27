@@ -1,27 +1,91 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b163d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    150deg,
+    rgba(140, 96, 231, 1) 20%,
+    rgba(241, 54, 159, 1) 53%,
+    rgba(193, 74, 232, 1) 88%
+  );
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    150deg,
+    rgba(140, 96, 231, 1) 20%,
+    rgba(241, 54, 159, 1) 53%,
+    rgba(193, 74, 232, 1) 88%
+  );
+}
+
 section.container {
+  height: auto;
+  margin-bottom: 10rem;
+}
+
+@media screen and (min-width: 990px) {
+  section.container {
     height: 90vh;
+    margin-bottom: 0;
+  }
 }
 
 .text-gradient {
-    background: linear-gradient(90deg, #8c60e7, #f1369f, #c14ae8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, #8c60e7, #f1369f, #c14ae8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .background-gradient {
-    background: #8c60e7;
-    background: linear-gradient(
-        90deg,
-        rgba(140, 96, 231, 1) 20%,
-        rgba(241, 54, 159, 1) 53%,
-        rgba(193, 74, 232, 1) 88%
-    );
+  background: #8c60e7;
+  background: linear-gradient(
+    90deg,
+    rgba(140, 96, 231, 1) 20%,
+    rgba(241, 54, 159, 1) 53%,
+    rgba(193, 74, 232, 1) 88%
+  );
+}
+
+.background-gradient-blue {
+  background: #00afe2;
+  background: linear-gradient(
+    143deg,
+    rgba(0, 175, 226, 1) 51%,
+    rgba(29, 137, 254, 1) 88%
+  );
+}
+
+.background-gradient-green {
+  background: #00c665;
+  background: linear-gradient(
+    143deg,
+    rgba(0, 198, 101, 1) 51%,
+    rgba(0, 191, 148, 1) 88%
+  );
+}
+
+.background-gradient-red {
+  background: #f73190;
+  background: linear-gradient(
+    143deg,
+    rgba(247, 49, 144, 1) 51%,
+    rgba(254, 37, 98, 1) 88%
+  );
 }
 
 .fs-7 {
@@ -29,54 +93,71 @@ section.container {
 }
 
 .fs-8 {
-  font-size: 0.75rem; 
+  font-size: 0.75rem;
 }
 
 .heading-text {
-    font-size: clamp(5.5rem, 10vw, 7.5rem);
+  font-size: clamp(5.5rem, 10vw, 7.5rem);
 }
 
 .hover-enlarge:hover {
-    transform: scale(1.1);
-    transition: transform 0.4s ease;
-    box-shadow: 0 2px 15px rgba(193, 74, 232, 0.322);
+  transform: scale(1.1);
+  transition: transform 0.4s ease;
+  box-shadow: 0 2px 15px rgba(193, 74, 232, 0.322);
 }
 
 .hover-moving-top:hover {
-    transform: translateY(-10px);
-    transition: transform 0.3s ease;
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
 }
 
 .hover-border:hover {
-    border:2px solid #7478ebb0;
-    box-shadow: 0 0 10px rgba(116, 120, 235, 0.623);
-    transition: box-shadow 0.3s ease;
+  border: 2px solid #7478ebb0;
+  box-shadow: 0 0 10px rgba(116, 120, 235, 0.623);
+  transition: box-shadow 0.3s ease;
+}
+
+.hover-spin:hover {
+  transform: rotate(360deg);
+  transition: transform 0.7s ease;
 }
 
 .btn-shadow-gradient:hover {
-    background: linear-gradient(90deg, #8c60e7, #f1369f, #c14ae8);
-    box-shadow: 0 4px 15px rgba(193, 74, 232, 0.6);
+  background: linear-gradient(90deg, #8c60e7, #f1369f, #c14ae8);
+  box-shadow: 0 4px 15px rgba(193, 74, 232, 0.6);
 }
 
 .bg-dark-blue {
-    background-color: #0b163d;
+  background-color: #0b163d !important;
 }
 
+.form-control.bg-dark-blue {
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.form-control.bg-dark-blue:focus {
+  background-color: #0f172a;
+  color: #fff;
+  border-color: #7477eb;
+  box-shadow: none;
+}
+
+
 .text-light-blue {
-    color: #7477eb;
+  color: #7477eb;
 }
 
 .navbar.scrolled {
-    background: #060d33; 
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    padding: 10px 0;
+  background: #060d33;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
 }
 
 .navbar-background {
-    background: #060d33; 
+  background: #060d33;
 }
 
 .navbar-background-secondary {
-    background: rgb(9, 22, 68); 
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  background: rgb(9, 22, 68);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
