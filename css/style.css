@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
@@ -56,7 +59,7 @@ section.container {
 }
 
 .bg-dark-blue {
-    background-color: #0b163dc2;
+    background-color: #0b163d;
 }
 
 .text-light-blue {
@@ -64,16 +67,16 @@ section.container {
 }
 
 .navbar.scrolled {
-    background: #081235ef; 
+    background: #060d33; 
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     padding: 10px 0;
 }
 
 .navbar-background {
-    background: #0b163d; 
+    background: #060d33; 
 }
 
 .navbar-background-secondary {
-    background: #081133; 
+    background: rgb(9, 22, 68); 
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
