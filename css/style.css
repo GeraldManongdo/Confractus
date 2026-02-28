@@ -1,5 +1,5 @@
 html {
-  scroll-behavior: smooth;
+  scroll-behavior:  0.4s smooth;
 }
 
 body {
@@ -138,6 +138,15 @@ section.container {
 .hover-text-color:hover {
   color: #ffffff !important;
   transition: color 0.3s ease;
+}
+
+.hover-moving-right:hover {
+  transform: translateX(10px);
+  transition: transform 0.3s ease;
+}
+.hover-moving-left:hover {
+  transform: translateX(-10px);
+  transition: transform 0.3s ease;
 }
 
 

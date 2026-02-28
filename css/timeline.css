@@ -1,0 +1,107 @@
+.timeline {
+  position: relative;
+  padding: 2rem 0;
+  overflow: hidden;
+}
+
+/* Gradient Vertical Line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background: #8c60e7;
+  background: linear-gradient(
+    130deg,
+    rgba(140, 96, 231, 1) 20%,
+    rgba(241, 54, 159, 1) 53%,
+    rgba(193, 74, 232, 1) 88%
+  );
+  transform: translateX(-50%);
+  border-radius: 50px;
+}
+
+.timeline-item {
+  width: 100%;
+  margin-bottom: 10rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Desktop Layout (Split Content and Image) */
+@media (min-width: 768px) {
+  .timeline-item {
+    width: 100%;
+  }
+  .timeline-item.left {
+    flex-direction: row;
+  }
+  .timeline-item.right {
+    flex-direction: row-reverse;
+  }
+
+  .timeline-content-half,
+  .timeline-image-half {
+    width: 50%;
+    padding: 0 40px;
+  }
+
+  .timeline-item.left .timeline-content-half {
+    text-align: right;
+  }
+  .timeline-item.right .timeline-content-half {
+    text-align: left;
+  }
+}
+
+/* Filled Dot in Center */
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  background-color: #5572da; /* Filled color */
+  border: 1px solid #162455;
+  box-shadow: 0 0 0 3px #5572da;
+  border-radius: 50%;
+  z-index: 2;
+  transform: translateX(-50%);
+}
+
+
+/* Image Styling */
+.timeline-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 767px) {
+  .timeline::before {
+    left: 20px;
+  }
+  .timeline-item::after {
+    left: 20px;
+  }
+  .timeline-item {
+    flex-direction: column !important;
+    align-items: flex-start;
+    padding-left: 50px;
+  }
+  .timeline-content-half,
+  .timeline-image-half {
+    width: 100%;
+    padding: 10px 0;
+  }
+  .timeline-item.left .timeline-content-half {
+    text-align: left;
+  }
+}
