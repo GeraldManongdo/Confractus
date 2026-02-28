@@ -46,6 +46,8 @@ section.container {
   }
 }
 
+/* Gradient */
+
 .text-gradient {
   background: linear-gradient(90deg, #8c60e7, #f1369f, #c14ae8);
   -webkit-background-clip: text;
@@ -54,7 +56,7 @@ section.container {
 .background-gradient {
   background: #8c60e7;
   background: linear-gradient(
-    90deg,
+    130deg,
     rgba(140, 96, 231, 1) 20%,
     rgba(241, 54, 159, 1) 53%,
     rgba(193, 74, 232, 1) 88%
@@ -88,6 +90,15 @@ section.container {
   );
 }
 
+.background-gradient-yellow {
+  background: #f7c031;
+  background: linear-gradient(
+    143deg,
+    rgba(247, 192, 49, 1) 51%,
+    rgba(254, 180, 37, 1) 88%
+  );
+}
+
 .fs-7 {
   font-size: 0.875rem;
 }
@@ -99,6 +110,8 @@ section.container {
 .heading-text {
   font-size: clamp(5.5rem, 10vw, 7.5rem);
 }
+
+/* Hover Effects */
 
 .hover-enlarge:hover {
   transform: scale(1.1);
@@ -121,6 +134,12 @@ section.container {
   transform: rotate(360deg);
   transition: transform 0.7s ease;
 }
+
+.hover-text-color:hover {
+  color: #ffffff !important;
+  transition: color 0.3s ease;
+}
+
 
 .btn-shadow-gradient:hover {
   background: linear-gradient(90deg, #8c60e7, #f1369f, #c14ae8);
@@ -160,4 +179,18 @@ section.container {
 .navbar-background-secondary {
   background: rgb(9, 22, 68);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.form-control::placeholder {
+  color: #ffffff !important;
+  opacity: 1; /* Makes it fully visible */
+}
+
+.form-control.bg-dark-blue::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+ul li::marker {
+    color: #7477eb; /* your bullet color */
 }
