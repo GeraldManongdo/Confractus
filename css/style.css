@@ -119,13 +119,19 @@ section.container {
   box-shadow: 0 2px 15px rgba(193, 74, 232, 0.322);
 }
 
+.hover-enlarge-sm:hover {
+  transform: scale(1.01);
+  transition: transform 0.4s ease;
+  box-shadow: 0 2px 15px rgba(193, 74, 232, 0.322);
+}
+
 .hover-moving-top:hover {
   transform: translateY(-10px);
   transition: transform 0.3s ease;
 }
 
 .hover-border:hover {
-  border: 2px solid #7478ebb0;
+  border: 2px solid #7478ebb0 !important;
   box-shadow: 0 0 10px rgba(116, 120, 235, 0.623);
   transition: box-shadow 0.3s ease;
 }
@@ -149,6 +155,9 @@ section.container {
   transition: transform 0.3s ease;
 }
 
+.pointer {
+  cursor: pointer;
+}
 
 .btn-shadow-gradient:hover {
   background: linear-gradient(90deg, #8c60e7, #f1369f, #c14ae8);
@@ -203,3 +212,4 @@ section.container {
 ul li::marker {
     color: #7477eb; /* your bullet color */
 }
+
