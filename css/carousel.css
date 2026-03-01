@@ -1,0 +1,96 @@
+.carousel-wrapper {
+  overflow: hidden;
+  position: relative;
+  padding: 60px 0;
+}
+
+.carousel-track {
+  display: flex;
+  align-items: center;
+  will-change: transform;
+}
+
+.carousel-item-custom {
+  flex: 0 0 33.333%;
+  padding: 4px;
+  cursor: pointer;
+  transition:
+    transform 0.5s ease,
+    filter 0.5s ease,
+    opacity 0.5s ease;
+}
+
+.carousel-item-custom img {
+  width: 100%;
+  border-radius: 15px;
+  display: block;
+  pointer-events: none;
+}
+
+.carousel-item-custom.side {
+  transform: scale(0.75);
+  filter: grayscale(100%);
+  opacity: 0.6;
+}
+
+.carousel-item-custom.center {
+  transform: scale(1);
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.prev-btn {
+  left: 10px;
+}
+.next-btn {
+  right: 10px;
+}
+
+.image-lightbox {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.85);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease;
+  z-index: 2000;
+}
+
+.image-lightbox.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.image-lightbox-image {
+  max-width: min(1100px, 90vw);
+  max-height: 85vh;
+  border-radius: 14px;
+  object-fit: contain;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.5);
+}
+
+.image-lightbox-close {
+  position: absolute;
+  top: 16px;
+  right: 22px;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+}
