@@ -9,8 +9,8 @@ window.projectsDetails = [
     link: "https://example.com/qtrace",
     role: "Lead Developer",
     duration: "4 months",
-    client: "Academic / Public Service Concept",
-    year: 2025,
+    client: "Academic Project",
+    year: 2026,
     challenges:
       "The main challenge was presenting project transparency data in a way that is simple for citizens while still useful for administrators and reviewers.",
     solutions:
@@ -57,7 +57,7 @@ window.projectsDetails = [
     link: "https://example.com/nook",
     role: "Developer",
     duration: "3 months",
-    client: "Academic Institution",
+    client: "Academic Project",
     year: 2024,
     challenges:
       "The major challenge was replacing repetitive encoding tasks without disrupting existing cataloging workflows.",
@@ -81,7 +81,7 @@ window.projectsDetails = [
     link: "https://example.com/eskulayout",
     role: "Front-End Developer",
     duration: "2 months",
-    client: "Personal Project",
+    client: "Academic Project",
     year: 2024,
     challenges:
       "The challenge was balancing simplicity with feature depth so users can organize notes without interface overload.",

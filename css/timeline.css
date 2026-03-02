@@ -25,7 +25,7 @@
 
 .timeline-item {
   width: 100%;
-  margin-bottom: 10rem;
+  margin-bottom: 2rem;
   position: relative;
   display: flex;
   align-items: center;
@@ -35,6 +35,7 @@
 @media (min-width: 768px) {
   .timeline-item {
     width: 100%;
+    margin-bottom: 10rem;
   }
   .timeline-item.left {
     flex-direction: row;
